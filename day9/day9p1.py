@@ -5,7 +5,7 @@ def factorial(n):
 # goes from 0 - 20, so next value is 21
 
 l=21
-v = -51090942171709440000 # 21 factorial
+v = 51090942171709440000 # 21 factorial
 # ans = 0
 # for i in range(l):
 #   x = factorial(i) * factorial(l-i-1) * (-1)**(l-i-1) * (l-i)
@@ -14,4 +14,4 @@ v = -51090942171709440000 # 21 factorial
 
 # print(ans)
 
-print(sum([sum([int(v/(factorial(i) * factorial(l-i-1) * (-1)**(l-i-1) * (-1-i)))*n[i] for i in range(l)]) for n in lst]))
+print(sum([sum([int(v/(factorial(i) * factorial(l-i-1) * (-1)**(l-i-1) * (l-i)))*n[i] for i in range(l)]) for n in lst]))
